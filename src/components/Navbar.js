@@ -3,7 +3,7 @@ import '../stylesheets/Navbar.css'
 
 function Navbar(props){
 
-	const {active, setSidebar} = props;
+	const {active, setActive, setSidebar} = props;
 
 	const list = (
 		<ul>
@@ -14,11 +14,13 @@ function Navbar(props){
 		</ul>
 	);
 
+	const user = JSON.parse(localStorage.getItem('user'));
+
 	return (
 		<div id="navbar">
 			<img src="logo.jpg" id="logo" alt='logo'/>
 			{(active!=='dashboard')?list:null}
-			{(active==='dashboard')?<div> <span id="dispname">{JSON.parse(localStorage.getItem('user')).name}</span><img src="menu.png" id="menu" alt='menu' title="options" onClick={()=>setSidebar((prev)=>!prev)}/></div>:null}
+			{(active==='dashboard')?<div> <span id="dispname">{user?user.name:null}</span><img src="menu.png" id="menu" alt='menu' title="options" onClick={()=>setSidebar((prev)=>!prev)}/></div>:null}
 		</div>
 	);
 }
