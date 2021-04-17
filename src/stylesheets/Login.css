@@ -1,0 +1,39 @@
+#login {
+    font-size: 3vh;
+    width: 30vw;
+    height: 50vh;
+    border: 0.3vh solid white;
+    border-radius: 3vh;
+    position: absolute;
+    left: 35vw;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#login input {
+    color: black;
+    font-size: 3vh;
+    width: 25vw;
+    height: 6vh;
+    outline: none;
+    margin-top: 1vh;
+}
+
+#login input:focus {
+    outline: 0.3vh solid blue;
+}
+
+#person {
+    font-size: 7vh;
+}
+
+#submit {
+    cursor: pointer;
+}
+
+#link:hover {
+    color: #3e6bff;
+}

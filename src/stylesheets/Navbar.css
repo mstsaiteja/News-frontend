@@ -1,0 +1,48 @@
+#navbar {
+    height: 8vh;
+    background-color: #3e6bff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navbar ul {
+    margin-right: 4vw;
+    list-style-type: none;
+}
+
+#navbar ul li {
+    display: inline-block;
+    padding: 2vh 3vw;
+    font-size: 1.6vw;
+}
+
+#navbar li:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+#logo {
+    height: 8vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#menu {
+    position: absolute;
+    top: 1vh;
+    right: 0.5vw;
+    height: 6vh;
+    cursor: pointer;
+}
+
+#dispname {
+    font-size: 4vh;
+    position: relative;
+    right: 5vw;
+}
+
+.active {
+    background-color: blue;
+}

@@ -1,0 +1,22 @@
+#display {
+    position: absolute;
+    font-size: 2vw;
+    top: 30vh;
+    right: 15vw;
+}
+
+#start {
+    font-size: 3vh;
+    background-color: transparent;
+    outline: none;
+    width: 12vw;
+    height: 7vh;
+    margin-top: 3vh;
+    border: 0.3vh solid white;
+    border-radius: 8vh;
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: blue;
+}

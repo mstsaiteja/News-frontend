@@ -1,0 +1,123 @@
+#sidebar {
+    width: 20vw;
+    height: 92vh;
+    background-color: #f1f1f1;
+    border: 0.3vh solid black;
+    list-style-type: none;
+    position: absolute;
+    top: 8vh;
+    right: 0;
+}
+
+#sidebar li {
+    font-size: 3.5vh;
+    color: rgb(0, 0, 0);
+    padding: 2vh 1vh;
+    cursor: pointer;
+}
+
+.sideactive {
+    background-color: rgb(163, 163, 163);
+}
+
+#heading {
+    background-color: #3e6bff;
+    color: white;
+}
+
+#sidebar li:hover:not(#heading) {
+    background-color: #555;
+    color: white;
+}
+
+#buttons {
+    position: absolute;
+    right: 1vw;
+    top: 85%;
+}
+
+#remove {
+    font-size: 3vh;
+    background-color: rgba(255, 0, 0, 0.486);
+}
+
+#remove:hover {
+    background-color: rgba(255, 0, 0, 0.815);
+}
+
+#search {
+    font-size: 3vh;
+    background-color: rgba(0, 128, 0, 0.507);
+}
+
+#search:hover {
+    background-color: rgba(0, 128, 0, 0.842);
+}
+
+#changename,
+#changepassword {
+    width: 50vw;
+    height: 70vh;
+    position: absolute;
+    top: 15vh;
+    left: 25vw;
+    background-color: whitesmoke;
+    border: 2vh solid blue;
+}
+
+#changename button,
+#changepassword button {
+    color: black;
+    width: 8vw;
+    height: 5vh;
+    margin: 1vh;
+    cursor: pointer;
+}
+
+#changename *,
+#changepassword * {
+    color: black;
+    font-size: 3vh;
+}
+
+#changenameoptions,
+#changepassoptions {
+    position: relative;
+    top: 12vh;
+    left: 9vw;
+}
+
+#changenameoptions label,
+#changepassoptions label {
+    display: inline-block;
+    width: 13vw;
+    margin-left: 2vw;
+}
+
+#changename input {
+    width: 13vw;
+    height: 4vh;
+}
+
+#req,
+#req1,
+#req2 {
+    color: red;
+    font-size: 2vh;
+    display: none;
+}
+
+#changepassoptions {
+    left: 3vw;
+}
+
+#type {
+    background-color: rgb(0, 0, 0);
+    height: 7vh;
+}
+
+#type span {
+    font-size: 6vh;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}

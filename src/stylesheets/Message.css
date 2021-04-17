@@ -1,0 +1,19 @@
+#msg {
+    font-size: 3vh;
+    border: 0.3vh solid white;
+
+    border-radius: 1vw;
+    height: 7vh;
+    width: 30vw;
+    margin: 2vh 5vh;
+    margin-left: 70vw;
+    padding-left: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cancel {
+    cursor: pointer;
+    font-size: 5vh;
+}

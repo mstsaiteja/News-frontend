@@ -1,0 +1,113 @@
+#dashboard {
+    margin: 3vh;
+    height: 87vh;
+    width: 97vw;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#item {
+    font-size: 3vh;
+    height: 70vh;
+    width: 28vw;
+    margin: 2vh;
+    border: 0.3vh solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#img {
+    height: 40vh;
+    width: 28vw;
+}
+
+#data {
+    text-align: center;
+    height: 14vh;
+    overflow: hidden;
+}
+
+#date {
+    width: 28vw;
+    color: #9b9b9b;
+    text-align: center;
+}
+
+#button {
+    height: 5vh;
+    width: 10vw;
+    background-color: rgb(60, 189, 114);
+    border: 0.3vh solid white;
+    border-radius: 1vh;
+    text-decoration: none;
+    text-align: center;
+}
+
+#button:hover {
+    color: rgb(0, 0, 0);
+}
+
+#load {
+    font-size: 10vh;
+    color: rgb(43, 255, 43);
+    margin: 35vh 10vh;
+}
+
+#empty {
+    font-size: 10vh;
+    color: red;
+    margin: 30vh 10vh;
+}
+
+@media screen and (max-width: 1100px) {
+    #item {
+        width: 40vw;
+        height: 80vh;
+    }
+    #img {
+        width: 40vw;
+        height: 50vh;
+    }
+    #button {
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #item {
+        width: 75vw;
+        height: 80vh;
+    }
+    #img {
+        width: 75vw;
+        height: 50vh;
+    }
+    #button {
+        width: 40vw;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #5e5c5c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    width: 2vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(185, 181, 181);
+}

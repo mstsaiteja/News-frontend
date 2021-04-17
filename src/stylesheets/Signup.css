@@ -1,0 +1,39 @@
+#signup {
+    font-size: 3vh;
+    width: 30vw;
+    height: 75vh;
+    border: 0.3vh solid white;
+    border-radius: 3vh;
+    position: absolute;
+    left: 35vw;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#signup input {
+    color: black;
+    font-size: 3vh;
+    width: 25vw;
+    height: 6vh;
+    outline: none;
+    margin-top: 1vh;
+}
+
+#signup input:focus {
+    outline: 0.3vh solid blue;
+}
+
+#person {
+    font-size: 5vh;
+}
+
+#submit {
+    cursor: pointer;
+}
+
+#link:hover {
+    color: #3e6bff;
+}

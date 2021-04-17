@@ -1,0 +1,9 @@
+#About {
+    border: 0.3vh solid white;
+    width: 80vw;
+    font-size: 2vw;
+    padding: 5vh;
+    position: absolute;
+    left: 10vw;
+    top: 15vh;
+}
