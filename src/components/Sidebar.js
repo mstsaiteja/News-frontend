@@ -1,6 +1,7 @@
 import React,{useState,useRef} from 'react';
 import axios from 'axios';
 import Filter from './Filter';
+import Tracker from './Tracker'
 import '../stylesheets/Sidebar.css'
 
 function ChangeName(props){
@@ -148,10 +149,13 @@ function Sidebar(props) {
         <div>
             <ul id="sidebar">
                 <li id="heading">Dashboard</li>
-                <li className={sidebarState==="filter"?"sideactive":null} onClick={()=>{;
+                <li className={sidebarState==="tracker"?"sideactive":null} onClick={()=> {
+                    setSidebarState("tracker");
+                }}>Covid Tracker</li>
+                <li className={sidebarState==="filter"?"sideactive":null} onClick={()=>{
                     setSidebarState("filter");
                     }
-                }>Filter</li>
+                }>Filter News</li>
                 <li className={sidebarState==="name"?"sideactive":null} onClick={()=> {
                     setSidebarState("name");
                 }}>Change Name</li>
@@ -163,6 +167,8 @@ function Sidebar(props) {
             {sidebarState==="filter"?<Filter setSidebarState={setSidebarState} 
             setHeadlines={setHeadlines} setSidebar={setSidebar} 
             setEverything={setEverything}/>:null}
+            {sidebarState==="tracker"?<Tracker setSidebar={setSidebar} 
+            setSidebarState={setSidebarState}/>:null}
             {sidebarState==="name"?<ChangeName setSidebar={setSidebar} 
             setSidebarState={setSidebarState}/>:null}
             {sidebarState==="password"?<ChangePassword setSidebar={setSidebar} setSidebarState={setSidebarState}/>:null}

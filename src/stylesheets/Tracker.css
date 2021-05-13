@@ -1,0 +1,86 @@
+#tracker {
+    width: 80vw;
+    height: 92vh;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    background-color: white;
+    border: 2vh solid blue;
+    color: red;
+}
+
+#close{
+    font-size: 7vh;
+    position: absolute;
+    top: 0;
+    right: 3vh;
+    cursor: pointer;
+}
+
+#close:hover{
+    color: rgb(160, 160, 160);
+}
+
+#countrylist{
+    color:black;
+    font-size: 2vw;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+}
+
+#countrylist * {
+    color: black;
+    font-size: 3vh;
+    margin-top: 2.5vh;
+}
+
+#countrylist label {
+    display: inline-block;
+    width: 7vw;
+    margin-left: 2vw;
+}
+
+#countrylist select {
+    width: 13vw;
+    height: 4vh;
+}
+
+#coronaimg {
+    position: relative;
+    left: 5vw;
+    top: 10vh;
+    width: 22vw;
+    height: 27vh;
+}
+
+#caseshead {
+    background-color: black;
+    font-size: 3vw;
+    width: 78vw;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+
+#globalcases{
+    color: black;
+    font-size: 3vh;
+    position: absolute;
+    top: 38vh;
+    left: 5vh;
+}
+
+#countrycases {
+    color: black;
+    font-size: 3vh;
+    position: absolute;
+    top: 38vh;
+    left: 40vw;
+}
+
+#globalcases span,
+#countrycases span{
+    color:red;
+    font-size:5vh;
+}

@@ -30,6 +30,7 @@ function Dashboard(props) {
 
     useEffect(async()=>{
         setActive('dashboard');
+        setSidebar(false);
         const res = await axios.post('http://localhost:5000/verify',user);
         const verified = res.data;
         verified?setLogged(true):setLogged(false);

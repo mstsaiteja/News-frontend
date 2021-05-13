@@ -27,7 +27,6 @@ function Filter(props) {
                 <label htmlFor="country">Country:</label>
                 <select id="country" ref={headCountryRef} name="country">
                     <option value="in">India</option>
-                    <option value="fr">France</option>
                     <option value="us">United States of America</option>
                     <option value="au">Australia</option>
                     <option value="ch">Switzerland</option>
@@ -37,7 +36,6 @@ function Filter(props) {
                     <option value="fr">France</option>
                     <option value="gb">United Kingdom</option>
                     <option value="jp">Japan</option>
-                    <option value="kr">Korea</option>
                     <option value="nz">New Zealand</option>
                     <option value="pt">Portugal</option>
                     <option value="ru">Russia</option>
